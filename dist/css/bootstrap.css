@@ -1,6 +1,9 @@
 /*!
  * Bootstrap Grid only, based on Bootstrap v3.3.7 (http://getbootstrap.com)
  */
+body {
+  margin: 0;
+}
 * {
   -webkit-box-sizing: border-box;
      -moz-box-sizing: border-box;

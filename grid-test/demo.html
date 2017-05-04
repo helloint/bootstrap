@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title></title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<script>
+		/**
+		 * Using Bootstrap Customization tool http://getbootstrap.com/customize/ to generate custom grid css definition
+		 * http://getbootstrap.com/customize/?id=ca37672d7b36a4433188ef6237307765
+		 * 
+		 * TODO: grid.css still contains some base styles, like body, a, input, which we don't need
+		 * we can fix it by changing bootstrap less source code: remove normalize.css, update scaffolding.less
+		 * 
+		 * @grid-gutter-width
+		 * 
+		 * @container-tablet
+		 * @container-desktop
+		 * @container-large-desktop
+		 * Note: the width is the visible width of the container
+		 * 
+		 * @screen-sm visible container's width + @grid-gutter-width + 18px
+		 * @screen-md visible container's width + @grid-gutter-width + 22px
+		 * @screen-lg visible container's width + @grid-gutter-width + 30px
+		 * Note: 30/22/18px, this setting is consistent with Bootstrap
+		 * 
+		 */
+	</script>
+	<link rel="stylesheet" href="bootstrap.css">
+	<style>
+		/* 3 Breakpoints */
+		/*
+			Gutter: 15
+			container's visible width / container's width / breakpoint  
+			Large(lg): 1140/1170/1200px
+			Medium(md): 940/970/992px
+			Small(sm): 720/750/768px
+			Extra small(xs): 290/320/320px
+		*/
+
+		/* common for lg */
+
+		/* common for md, sm, xs */
+		@media (max-width: 1199px)
+		{
+		}
+
+		/* common for sm, xs */
+		@media (max-width: 991px)
+		{
+		}
+
+		/* only for xs */
+		@media (max-width: 767px)
+		{
+		}
+
+		/* only for md */
+		@media (min-width: 992px) and (max-width: 1199px)
+		{
+		}
+
+		/* only for sm */
+		@media (min-width: 768px) and (max-width: 991px)
+		{
+		}
+
+		/* Simplified 2 Breakpoints */
+		/*
+			Medium(md): 940/992px
+			Small(sm): 720/768px
+			Extra small(xs): >290/ >320px
+		*/
+
+		/* common for md */
+
+		/* common for sm, xs */
+		@media (max-width: 991px)
+		{
+		}
+
+		/* only for xs */
+		@media (max-width: 767px)
+		{
+		}
+
+		/* only for sm */
+		@media (min-width: 768px) and (max-width: 991px)
+		{
+		}
+	</style>
+	<style>
+		.grid-item {
+			border: 1px solid black;
+			margin-bottom: 30px;
+		}
+		.img-responsive
+		{
+			width: 100%;
+		}
+	</style>
+</head>
+<body>
+<div class="container">
+	<!--Eleven Sports Redesign-->
+	<div class="row">
+		<div class="col-md-3 col-sm-6 col-xs-12">
+			<div class="grid-item"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12">
+			<div class="grid-item"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12">
+			<div class="grid-item"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12">
+			<div class="grid-item"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12">
+			<div class="grid-item"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12">
+			<div class="grid-item"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12">
+			<div class="grid-item"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12">
+			<div class="grid-item"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12">
+			<div class="grid-item"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12">
+			<div class="grid-item"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12">
+			<div class="grid-item"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12">
+			<div class="grid-item"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12">
+			<div class="grid-item"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-6 col-xs-12">
+			<div class="grid-item"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-sm-4 col-xs-12">
+			<div class="grid-item double"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-sm-4 col-xs-12">
+			<div class="grid-item double"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-sm-4 col-xs-12">
+			<div class="grid-item double"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-sm-4 col-xs-12">
+			<div class="grid-item double"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-sm-4 col-xs-12">
+			<div class="grid-item double"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-sm-4 col-xs-12">
+			<div class="grid-item double"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-sm-4 col-xs-12">
+			<div class="grid-item double"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-sm-4 col-xs-12">
+			<div class="grid-item double"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-sm-4 col-xs-12">
+			<div class="grid-item double"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-sm-4 col-xs-12">
+			<div class="grid-item double"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3 col-sm-4 col-xs-12">
+			<div class="grid-item double"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-12">
+			<div class="grid-item double"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-12">
+			<div class="grid-item double"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-12">
+			<div class="grid-item double"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-12">
+			<div class="grid-item double"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-12">
+			<div class="grid-item double"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-12">
+			<div class="grid-item double"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-12">
+			<div class="grid-item double"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-12">
+			<div class="grid-item double"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-12">
+			<div class="grid-item double"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="grid-item">Video Thumbnails</div>
+		</div>
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="grid-item">2</div>
+		</div>
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="grid-item">3</div>
+		</div>
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="grid-item">4</div>
+		</div>
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="grid-item">5</div>
+		</div>
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="grid-item">6</div>
+		</div>
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="grid-item">7</div>
+		</div>
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="grid-item">8</div>
+		</div>
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="grid-item">9</div>
+		</div>
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="grid-item">10</div>
+		</div>
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="grid-item">11</div>
+		</div>
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="grid-item">12</div>
+		</div>
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="grid-item">13</div>
+		</div>
+		<div class="col-md-4 col-sm-6 col-xs-12">
+			<div class="grid-item">14</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-md-3 col-sm-4 col-xs-12">
+			<div class="grid-item"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-12">
+			<div class="grid-item"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-12">
+			<div class="grid-item"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-12">
+			<div class="grid-item"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-12">
+			<div class="grid-item"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-12">
+			<div class="grid-item"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-12">
+			<div class="grid-item"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-12">
+			<div class="grid-item"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-12">
+			<div class="grid-item"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-12">
+			<div class="grid-item"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-12">
+			<div class="grid-item"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-12">
+			<div class="grid-item"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-12">
+			<div class="grid-item"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+		<div class="col-md-3 col-sm-4 col-xs-12">
+			<div class="grid-item"><img src="images/item_1.jpg" class="img-responsive"/></div>
+		</div>
+	</div>
+
+	<div class="row">
+		<div class="col-lg-2 col-mp10-2 col-md-3 col-sm-4 col-xp-6 col-xs-12">
+			<div class="grid-item">Video Thumbnails</div>
+		</div>
+		<div class="col-lg-2 col-mp10-2 col-md-3 col-sm-4 col-xp-6 col-xs-12">
+			<div class="grid-item">2</div>
+		</div>
+		<div class="col-lg-2 col-mp10-2 col-md-3 col-sm-4 col-xp-6 col-xs-12">
+			<div class="grid-item">3</div>
+		</div>
+		<div class="col-lg-2 col-mp10-2 col-md-3 col-sm-4 col-xp-6 col-xs-12">
+			<div class="grid-item">4</div>
+		</div>
+		<div class="col-lg-2 col-mp10-2 col-md-3 col-sm-4 col-xp-6 col-xs-12">
+			<div class="grid-item">5</div>
+		</div>
+		<div class="col-lg-2 col-mp10-2 col-md-3 col-sm-4 col-xp-6 col-xs-12">
+			<div class="grid-item">6</div>
+		</div>
+	</div>
+</div>
+</body>
+</html>

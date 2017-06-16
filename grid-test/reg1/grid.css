@@ -34,16 +34,22 @@ img {
     width: 720px;
   }
 }
+/*custom*/
+@media (min-width: 768px) { .container { padding-right: 0; padding-left: 0; } }
 @media (min-width: 992px) {
   .container {
     width: 800px;
   }
 }
+/*custom*/
+@media (min-width: 1040px) { .container { width:1020px } }
 @media (min-width: 1330px) {
   .container {
     width: 1280px;
   }
 }
+/*custom*/
+@media (min-width: 1570px) { .container { width: 1540px } }
 .container-fluid {
   padding-right: 15px;
   padding-left: 15px;

@@ -156,13 +156,13 @@ module.exports = function (grunt) {
       compileCore: {
         options: {
           strictMath: true,
-          sourceMap: true,
+          // sourceMap: true,
           outputSourceFiles: true,
           sourceMapURL: '<%= pkg.name %>.css.map',
           sourceMapFilename: 'dist/css/<%= pkg.name %>.css.map'
         },
         src: 'less/bootstrap.less',
-        dest: 'dist/css/<%= pkg.name %>.css'
+        dest: 'dist/css/grid.css'
       },
       compileTheme: {
         options: {
@@ -235,8 +235,8 @@ module.exports = function (grunt) {
         advanced: false
       },
       minifyCore: {
-        src: 'dist/css/<%= pkg.name %>.css',
-        dest: 'dist/css/<%= pkg.name %>.min.css'
+        src: 'dist/css/grid.css',
+        dest: 'dist/css/grid.min.css'
       },
       minifyTheme: {
         src: 'dist/css/<%= pkg.name %>-theme.css',
